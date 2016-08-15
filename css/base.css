@@ -23,13 +23,11 @@ img {
 
 section {
 	height: 100vh;
-	border-top: 1px solid #000;
 }
 
 section div {
 	margin: 0 auto;
 	width: 60%;
-	min-width: 600px;
 	padding: 60px;
 }
 
@@ -58,5 +56,17 @@ h2 {
 
 #party {
 	background-color: #EFC239;
+}
+
+@media screen and (max-width: 640px) {
+	h1 {
+		font-size: 4em;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	section {
+	height: 80vh;
+}
 }
 
