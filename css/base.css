@@ -70,6 +70,7 @@ header {
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
 	position: relative;
+	width: 80%;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
