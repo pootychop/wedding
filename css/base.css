@@ -29,18 +29,29 @@ section {
 section div {
 	margin: 0 auto;
 	width: 60%;
+	min-width: 600px;
 	padding: 60px;
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 6em;
+	font-weight: 800;
+	text-transform: uppercase;
+	line-height: 1em;
+    margin: 2%;
 }
 h2 {
-	font-size: 4em;
+	font-size: 5em;
+	font-weight: 600;
+	line-height: 1em;
+	color: #ED4938;
+	margin: 10%;
 }
 
 #AnJ {
-	background-image: url("img/skaters.jpg");
+	background-image: url("https://github.com/pootychop/wedding/blob/gh-pages/img/skaters.jpg?raw=true");
+	background-repeat: no-repeat;
+	background-position: right;
 	background-color: #2C2C32;
 	color: #fff;
 }
