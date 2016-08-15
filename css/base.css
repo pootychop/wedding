@@ -16,7 +16,7 @@ body {
 	color: #333136;
 }
 
-img {
+#heart {
 	width: 30%;
 	max-width: 300px;
 	min-width: 100px;
@@ -25,7 +25,7 @@ img {
 section {
 }
 
-section div {
+section div, footer div {
 	margin: 0 auto;
 	width: 60%;
 	padding: 60px;
@@ -45,7 +45,15 @@ h2 {
 	color: #ED4938;
 	margin: 10%;
 }
+h3 {
+	text-transform: uppercase;
+	    margin: 0;
+}
 
+a {
+	text-decoration: none;
+	color: #333136;
+}
 #AnJ {
 	position: relative;
 	top: 60px;
@@ -67,6 +75,7 @@ header {
     width: 100%;
     background-color: #fff;
 }
+
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
 	position: relative;
@@ -101,6 +110,20 @@ ul.topnav li a:hover {
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {
 	display: none;
+}
+
+
+
+footer {
+	background-color: #333136;
+	color: #fff;
+}
+footer img {
+	width: 50%;
+	padding: 20px 0;
+}
+footer a {
+	color: #fff;
 }
 
 @media screen and (max-width: 640px) {
