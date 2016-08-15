@@ -13,10 +13,39 @@ body {
 	box-sizing: border-box;
 	line-height: 1.4;
 	background-color: #fff;
-	color: #000;
+	color: #333136;
 }
 
 img {
 	width: 100%;
 	max-width: 620px;
 }
+
+section {
+	height: 100vh;
+	border-top: 1px solid #000;
+}
+
+section div {
+	margin: 0 auto;
+	width: 60%;
+	padding: 60px;
+}
+
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 4em;
+}
+
+#AnJ {
+	background-image: url("img/skaters.jpg");
+	background-color: #2C2C32;
+	color: #fff;
+}
+
+#party {
+	background-color: #EFC239;
+}
+
