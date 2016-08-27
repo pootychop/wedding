@@ -15,7 +15,28 @@ body {
 	background-color: #fff;
 	color: #333136;
 }
+fieldset {
+    display: block;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0em;
+    -webkit-padding-start: 0em;
+    -webkit-padding-end: 0em;
+    -webkit-padding-after: 0em;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    min-width: -webkit-min-content;
+    border-width: 0;
+    border-style: none;
+}
 
+div {
+	box-sizing: border-box;
+	overflow: auto;
+}
 #heart, #skate {
 	width: 30%;
 	max-width: 300px;
@@ -29,7 +50,7 @@ section {
 	position: relative;
 }
 
-section div, footer div {
+.center{
 	margin: 0 auto;
 	width: 80%;
 	padding: 6%;
@@ -71,8 +92,71 @@ a {
 	background-color: #EFC239;
 }
 
-#details {
+
+#details div, fieldset dl div{
+	position: relative;
+	display: inline-block;
+	width: 50%;
+	overflow: visible;
+	padding: 2.5%;
+	vertical-align: top;
 	text-align: left;
+	float: left;
+}
+
+#details div img {
+	width: 100%;
+}
+
+#more-info {
+	background-color: #ED4938;
+	color: #fff;
+	text-align: left;
+}
+
+button, .button {
+    background-color: #F87117;
+    border: 1px solid #ED4938;
+    border-radius: 2px;
+    color: #fff;
+    padding: 11px 20px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+.hidden {
+	display: none;
+}
+
+.info {
+	display: block;
+}
+
+#rsvp {
+	background-color: #03CEC2;
+}
+#rsvp h2{
+	color: #333136 ;
+}
+
+fieldset dl div:last-child {
+	float: left;
+}
+
+.text-field {
+	width: 100%;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dl {
+	margin: 0 auto;
+}
+
+dd {
+	-webkit-margin-start: 0px;
+	margin: 0 0 16px;
 }
 
 header {
@@ -81,6 +165,10 @@ header {
     z-index: 999;
     width: 100%;
     background-color: #fff;
+}
+
+#notes {
+	height: 60px;
 }
 
 /* Remove margins and padding from the list, and add a black background color */
@@ -104,7 +192,7 @@ ul.topnav li a {
     display: inline-block;
     color: #333136;
     text-align: center;
-    padding: 16px 16px 10PX;
+    padding: 16px 16px 10px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 1em;
@@ -133,7 +221,13 @@ footer img {
 footer a {
 	color: #fff;
 }
+@media screen and (max-width: 780px) {
+	#details div, fieldset dl div {
+		display: block;
+		width: 100%;
+}
 
+}
 @media screen and (max-width: 640px) {
 	h1 {
 		font-size: 4em;
@@ -170,6 +264,8 @@ footer a {
     display: block;
     text-align: center;
   }
+
+
 }
 
 
