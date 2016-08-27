@@ -32,7 +32,10 @@ fieldset {
     border-width: 0;
     border-style: none;
 }
-
+aside {
+	font-size: 0.8em;
+	font-weight: normal;
+}
 div {
 	box-sizing: border-box;
 	overflow: auto;
@@ -156,7 +159,7 @@ dl {
 
 dd {
 	-webkit-margin-start: 0px;
-	margin: 0 0 16px;
+	margin: 0 0 1px;
 }
 
 header {
@@ -264,6 +267,14 @@ footer a {
     display: block;
     text-align: center;
   }
+
+  ul.topnav li a {
+    border: none;
+  }
+  ul.topnav li a:hover {
+    border: none;
+  }
+
 
 
 }
