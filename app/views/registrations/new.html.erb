@@ -1,50 +1,48 @@
-<div class="center">
-  <h2>RSVP</h2>
-  <%= form_for @registration do |f| %>
-    <fieldset>
-      <dl>
-        <div>
-          <dt><%= f.label :name, "Full Name" %></dt>
-          <dd>
-          <%= f.text_field :name %>
-          </dd>
+<h2>RSVP</h2>
+<%= form_for @registration do |f| %>
+  <fieldset>
+    <dl>
+      <div>
+        <dt><%= f.label :name, "Full Name" %></dt>
+        <dd>
+        <%= f.text_field :name %>
+        </dd>
 
-          <dt><%= f.label :email, "Email Address" %></dt>
-          <dd>
-          <%= f.text_field :email %>
-          </dd>
+        <dt><%= f.label :email, "Email Address" %></dt>
+        <dd>
+        <%= f.text_field :email %>
+        </dd>
 
-          <dt>Will you attend?</dt>
-          <dd>
-          <label><%= f.radio_button :attending, :true %> Yes</label>
-          <label><%= f.radio_button :attending, :false %> No</label>
-          </dd>
+        <dt>Will you attend?</dt>
+        <dd>
+        <label><%= f.radio_button :attending, :true %> Yes</label>
+        <label><%= f.radio_button :attending, :false %> No</label>
+        </dd>
 
-          <dt>Will you bring a friend?
-          <aside>We'd like to keep this party small and intimate. Please limit your guests to 1 person.</aside>
-          </dt>
-          <dd>
-          <label><%= f.radio_button :total_guests, 2 %> Yes</label>
-          <label><%= f.radio_button :total_guests, 1 %> No</label>
-          </dd>
-        </div>
+        <dt>Will you bring a friend?
+        <aside>We'd like to keep this party small and intimate. Please limit your guests to 1 person.</aside>
+        </dt>
+        <dd>
+        <label><%= f.radio_button :total_guests, 2 %> Yes</label>
+        <label><%= f.radio_button :total_guests, 1 %> No</label>
+        </dd>
+      </div>
 
-        <div>
-          <dt><%= label :dietary_restrictions, "Dietary Restrictions or allergies?" %></dt>
-          <dd>
-            <%= f.text_area :dietary_restrictions %>
-          </dd>
+      <div>
+        <dt><%= label :dietary_restrictions, "Dietary Restrictions or allergies?" %></dt>
+        <dd>
+          <%= f.text_area :dietary_restrictions %>
+        </dd>
 
-          <dt><%= f.label :notes %></dt>
-          <dd>
-            <%= f.text_area :notes %>
-          </dd>
-        </div>
+        <dt><%= f.label :notes %></dt>
+        <dd>
+          <%= f.text_area :notes %>
+        </dd>
+      </div>
 
-        <div>
-          <%= f.submit "submit" %>
-        </div>
-      </dl>
-    </fieldset>
-  <% end %>
-</div>
+      <div>
+        <%= f.submit "submit" %>
+      </div>
+    </dl>
+  </fieldset>
+<% end %>

@@ -1,3 +1,15 @@
-Here are your registration details:
-<%= @registration.name %>
-<%= @registration.email %>
+<h3>Your Registration Details.</h3>
+<dl>
+  <dt>Name</dt>
+  <dd> <%= @registration.name %> </dd>
+  <dt>Email</dt>
+  <dd> <%= @registration.email %> </dd>
+  <dt>Are you attending?</dt>
+  <dd> <%= bool_to_human @registration.attending? %> </dd>
+  <dt>Total Guests</dt>
+  <dd> <%= @registration.total_guests %> </dd>
+  <dt>Dietary Restrictions</dt>
+  <dd> <%= @registration.dietary_restrictions %> </dd>
+  <dt>Notes</dt>
+  <dd> <%= @registration.notes %> </dd>
+</dl>
