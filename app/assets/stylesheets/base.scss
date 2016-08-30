@@ -99,7 +99,7 @@ a {
 }
 
 
-#details div, fieldset dl div{
+#details div, fieldset dl > div{
   position: relative;
   display: inline-block;
   width: 50%;
