@@ -1,0 +1,116 @@
+<header>
+  <ul class="topnav" id="myTopnav">
+    <li id="AnJ-link" onclick="myFunction()"><a href="#AnJ">A+J</a></li>
+    <li><a href="#party" onclick="myFunction()">The Party</a></li>
+    <li><a href="#rsvp" onclick="myFunction()">RSVP</a></li>
+    <li><a href="#gifts" onclick="myFunction()">Registry</a></li>
+    <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+    </li>
+  </ul>
+</header>
+<section id="AnJ">
+  <div class="center">
+    <%= image_tag "heart.svg", alt: "heart", id: "heart" %>
+    <h1>Alex + Julie</h1>
+    <h2>10-16-16</h2>
+  </div>
+</section>
+<section id="party">
+  <div class="center">
+    <%= image_tag "skate.svg", alt: "skate", id: "skate" %>
+    <h2>The Party</h2>
+    <div id="details">
+      <div>
+        <%= image_tag "map.jpg", alt: "map", id: "map" %>
+      </div>
+      <div>
+        <h3>Skates</h3>
+        <a href="https://goo.gl/maps/aKurvzjYKuF2">401 E Broadway Ct<br>Sand Springs, OK 74063</a>
+        <h4>Ceremony at 5:00PM<br>Skating and Dinner to follow.</h4>
+        <button type="button" onclick="showMore()">More Info</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="more-info" class="hidden">
+  <div class="center">
+    <p>Its true. We're getting married at a skating rink! Don't worry. If you don't feel comfortable with wheels on your feet, you are not obligated to wear skates.</p>
+    <p>If you won’t wear skates, please avoid wearing heels on the wood floor. The ceremony will take place on the skating rink. After dinner, the floor will open up for dancing and skating.</p>
+    <p>If  you have any questions, feel free to email us at <a href="mailto:hello@alexandjulie.wedding?Subject=Hello!" target="_top">hello@alexandjulie.wedding</a></p>
+  </div>
+</section>
+<!-- <div id="rsvp">
+    <iframe src="https://docs.google.com/a/alexandjulie.wedding/forms/d/e/1FAIpQLScqS215F5AQH4oh-7tLTUP0p9FfBj2ImdcTei7kMgUsBYUHKg/viewform?embedded=true" width="100%" height="1300px" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto">Loading...</iframe>
+  </div> -->
+<section id="rsvp">
+  <div class="center">
+    <h2>RSVP</h2>
+    <form>
+      <fieldset>
+        <dl>
+          <div>
+            <dt>Full Name</dt>
+            <dd>
+            <input class="text-field" type="text" name="name">
+            </dd>
+
+            <dt>Email Adress</dt>
+            <dd>
+            <input class="text-field" type="text" name="email">
+            </dd>
+
+            <dt>Will you attend?</dt>
+            <dd>
+            <input type="radio" name="yes-no" value="yes">Yes
+            <input type="radio" name="yes-no" value="NO">No
+            </dd>
+
+            <dt>Will you bring a friend?
+            <aside>We'd like to keep this party small and intimate. Please limit your guests to 1 person.</aside>
+            </dt>
+            <dd>
+            <input type="radio" name="plusyes-no" value="yes">Yes
+            <input type="radio" name="plusyes-no" value="NO">No
+            </dd>
+          </div>
+
+          <div>
+            <dt>Dietary Restrictions or allergies?</dt>
+            <dd><input type="checkbox" name="diet" value="Vegetarian"/>Vegetarian<br>
+            <input type="checkbox" name="diet" value="Vegan"/>Vegan<br>
+            <input type="checkbox" name="diet" value="Gluten Free"/>Gluten Free<br>
+            <input type="checkbox" name="diet" value="Kosher"/>Kosher<br>
+            <input type="checkbox" name="diet" value="other"/>Other
+            <input class="text-field" type="text" name="otherText">
+            </dd>
+
+            <dt>Notes</dt>
+            <dd>
+            <input id="notes" class="text-field" type="text" name="message">
+            </dd>
+          </div>
+
+          <div>
+            <input class="button" type="submit" value="Submit">
+          </div>
+        </dl>
+      </fieldset>
+    </form>
+  </div>
+</section>
+<section id="gifts">
+  <div class="center">
+    <h2>Gifts?</h2>
+    <h3>No, Thank You</h3>
+    <p>Your presence is the greatest gift of all.</p>
+  </div>
+</section>
+<footer>
+  <div class="center">
+    <%= image_tag "heart-row.svg" %>
+    <h3>email us</h3>
+    <a href="mailto:hello@alexandjulie.wedding?Subject=Hello!" target="_top">hello@alexandjulie.wedding</a>
+  </div>
+</footer>
+
