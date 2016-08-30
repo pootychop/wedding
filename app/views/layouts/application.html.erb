@@ -39,7 +39,72 @@
   </head>
 
   <body>
-    <%= yield %>
+<header>
+  <ul class="topnav" id="myTopnav">
+    <li id="AnJ-link" onclick="myFunction()"><a href="#AnJ">A+J</a></li>
+    <li><a href="#party" onclick="myFunction()">The Party</a></li>
+    <li><a href="#rsvp" onclick="myFunction()">RSVP</a></li>
+    <li><a href="#gifts" onclick="myFunction()">Registry</a></li>
+    <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+    </li>
+  </ul>
+</header>
+<% flash.each do |key, value| %>
+  <div class="alert alert-<%= key %>"><%= value %></div>
+<% end %>
+<section id="AnJ">
+  <div class="center">
+    <%= image_tag "heart.svg", alt: "heart", id: "heart" %>
+    <h1>Alex + Julie</h1>
+    <h2>10-16-16</h2>
+  </div>
+</section>
+<section id="party">
+  <div class="center">
+    <%= image_tag "skate.svg", alt: "skate", id: "skate" %>
+    <h2>The Party</h2>
+    <div id="details">
+      <div>
+        <%= image_tag "map.jpg", alt: "map", id: "map" %>
+      </div>
+      <div>
+        <h3>Skates</h3>
+        <a href="https://goo.gl/maps/aKurvzjYKuF2">401 E Broadway Ct<br>Sand Springs, OK 74063</a>
+        <h4>Ceremony at 5:00PM<br>Skating and Dinner to follow.</h4>
+        <button type="button" onclick="showMore()">More Info</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="more-info" class="hidden">
+  <div class="center">
+    <p>Its true. We're getting married at a skating rink! Don't worry. If you don't feel comfortable with wheels on your feet, you are not obligated to wear skates.</p>
+    <p>If you won’t wear skates, please avoid wearing heels on the wood floor. The ceremony will take place on the skating rink. After dinner, the floor will open up for dancing and skating.</p>
+    <p>If  you have any questions, feel free to email us at <a href="mailto:hello@alexandjulie.wedding?Subject=Hello!" target="_top">hello@alexandjulie.wedding</a></p>
+  </div>
+</section>
+<section id="rsvp">
+  <%= yield %>
+</section>
+<section id="gifts">
+  <div class="center">
+    <h2>Gifts?</h2>
+    <h3>No, Thank You</h3>
+    <p>Your presence is the greatest gift of all.</p>
+  </div>
+</section>
+
+
+    <footer>
+      <div class="center">
+        <%= image_tag "heart-row.svg" %>
+        <h3>email us</h3>
+        <a href="mailto:hello@alexandjulie.wedding?Subject=Hello!" target="_top">hello@alexandjulie.wedding</a>
+      </div>
+    </footer>
+
+
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");

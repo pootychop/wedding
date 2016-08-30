@@ -40,6 +40,9 @@ div {
   box-sizing: border-box;
   overflow: auto;
 }
+label {
+  cursor: pointer;
+}
 #heart, #skate {
   width: 30%;
   max-width: 300px;
@@ -117,14 +120,15 @@ a {
   text-align: left;
 }
 
-button, .button {
-    background-color: #F87117;
-    border: 1px solid #ED4938;
-    border-radius: 2px;
-    color: #fff;
-    padding: 11px 20px;
-    text-transform: uppercase;
-    font-size: 0.8em;
+input[type="submit"], button {
+  cursor: pointer;
+  background-color: #F87117;
+  border: 1px solid #ED4938;
+  border-radius: 2px;
+  color: #fff;
+  padding: 11px 20px;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }
 .hidden {
   display: none;
@@ -145,8 +149,12 @@ fieldset dl div:last-child {
   float: left;
 }
 
-.text-field {
+input[type='text'],
+textarea {
   width: 100%;
+}
+textarea {
+  height: 60px;
 }
 
 dt {
@@ -168,10 +176,6 @@ header {
     z-index: 999;
     width: 100%;
     background-color: #fff;
-}
-
-#notes {
-  height: 60px;
 }
 
 /* Remove margins and padding from the list, and add a black background color */
