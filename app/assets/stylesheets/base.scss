@@ -133,6 +133,7 @@ input[type="submit"], button {
 input[type="submit"] {
   clear: both;
   display: block;
+  margin: 0 2.5%;
 }
 .hidden {
   display: none;
@@ -140,6 +141,27 @@ input[type="submit"] {
 
 .info {
   display: block;
+}
+
+.alert {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+
+  > div {
+    margin: 16px;
+    background: #fff;
+    padding: 10px;
+  }
+
+  .alert-notice {
+    border: #ADC607 2px solid;
+  }
+  .alert-error {
+    border: #ED4938 2px solid;
+    color: #ED4938;
+  }
 }
 
 #rsvp {
@@ -153,6 +175,7 @@ input[type="submit"] {
   border: #ED4938 2px solid;
   background: #fff;
   padding: 10px;
+  margin-left: 2.5%;
 
   text-align: left;
   ul {
@@ -186,6 +209,7 @@ textarea {
 
 dt {
   font-weight: bold;
+  margin-top: 16px;
 }
 
 dl {
@@ -256,7 +280,7 @@ footer a {
   color: #fff;
 }
 @media screen and (max-width: 780px) {
-  #details div, fieldset dl div {
+  #details div, fieldset dl {
     display: block;
     width: 100%;
 }

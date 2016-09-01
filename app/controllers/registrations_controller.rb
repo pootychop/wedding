@@ -9,7 +9,7 @@ class RegistrationsController < ApplicationController
       flash[:notice] = "You are registered!"
       redirect_to registration_url(@registration, anchor: 'rsvp')
     else
-      flash[:error] = "There was a problem..."
+      flash[:error] = "There was a problem with your RSVP, please scroll down to fix."
       render :new
     end
   end
