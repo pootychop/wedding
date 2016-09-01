@@ -1,7 +1,7 @@
 <h2>RSVP</h2>
 <% if @registration.errors.any? %>
   <div id="error_explanation">
-    <h2> <%= pluralize(@registration.errors.count, "error")%> prohibited this registration from being saved:  </h2>
+    <h3> <%= pluralize(@registration.errors.count, "error")%> prohibited this registration from being saved.</h3>
     <p>There were problems with the following fields:</p>
     <ul>
       <% @registration.errors.full_messages.each do |message| %>
@@ -13,7 +13,6 @@
 <%= form_for @registration do |f| %>
   <fieldset>
     <dl>
-      <div>
         <dt><%= f.label :name, "Full Name" %></dt>
         <dd>
         <%= f.text_field :name %>
@@ -37,9 +36,8 @@
         <label><%= f.radio_button :total_guests, 2 %> Yes</label>
         <label><%= f.radio_button :total_guests, 1 %> No</label>
         </dd>
-      </div>
-
-      <div>
+      </dl>
+      <dl>
         <dt><%= label :dietary_restrictions, "Dietary Restrictions or allergies?" %></dt>
         <dd>
           <%= f.text_area :dietary_restrictions %>
@@ -49,11 +47,8 @@
         <dd>
           <%= f.text_area :notes %>
         </dd>
-      </div>
-
-      <div>
-        <%= f.submit "submit" %>
-      </div>
+      </dl>
     </dl>
+    <%= f.submit "submit" %>
   </fieldset>
 <% end %>
